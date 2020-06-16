@@ -1,6 +1,6 @@
 # SONiC on Multi NPU platforms
 # High Level Design Document
-## Rev 0.1
+## Rev 0.2
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
 **Table of Contents**
 
