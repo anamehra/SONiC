@@ -49,7 +49,6 @@ The figure below depicts a example of multi NPU platform. In this platform there
 
 ![Multi NPU Device](/images/multi_npu_device.jpg)
 
-
 To support multi NPU devices in SONiC a disaggregated design approach will be used. This means:
 - Control plane containers, like bgp, lldp and teamd are replicated for every NPU on present on the device
 - Data plane container like swss and syncd are also replicated per NPU.
@@ -68,8 +67,10 @@ The interfaces for a given NPU is linked to a namespace.
 
 All the control and data plane containers replicated per namespace.
 
+
 ![Archtecture Detailed View](/images/multi_npu_architecture.jpg)
 ### NPU roles
+
 On multi NPU devices, each NPU can act as 
  - Frontend NPU, which connect to external devices. These NPU have some ports as frontpanel ports and some as internal ports.
  - Backend NPU, which have only internal links. These NPU only connect to other Frontend NPUs.
