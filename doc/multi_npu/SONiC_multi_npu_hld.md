@@ -47,7 +47,7 @@ SONiC so far supports platforms with single NPU, we are enhancing SONiC to suppo
 
 The figure below depicts a example of multi NPU platform. In this platform there are multi NPU interconnected with each other. 
 
-![Multi NPU Device](/images/multi_npu_device.jpg)
+![Multi NPU Device](images/multi_npu_device.jpg)
 
 To support multi NPU devices in SONiC a disaggregated design approach will be used. This means:
 - Control plane containers, like bgp, lldp and teamd are replicated for every NPU on present on the device
@@ -59,7 +59,7 @@ To support multi NPU devices in SONiC a disaggregated design approach will be us
 - A seperate database instance per NPU
   - Configuration is generated and stored per NPU.
 
-![Archtecture Diagram](/images/architecture_diagram.jpg)
+![Archtecture Diagram](images/architecture_diagram.jpg)
 
 To achieve this disaggregated design, a linux network namespace is created for every NPU.
 Thereby creating a copy of network stack including routes and network devices for every NPU.
@@ -68,7 +68,7 @@ The interfaces for a given NPU is linked to a namespace.
 All the control and data plane containers replicated per namespace.
 
 
-![Archtecture Detailed View](/images/multi_npu_architecture.jpg)
+![Archtecture Detailed View](images/multi_npu_architecture.jpg)
 ### NPU roles
 
 On multi NPU devices, each NPU can act as 
@@ -85,7 +85,7 @@ In this approach:
 - All the NPUs have same view of the network.
 
 
-![iBGP](/images/iBGP.jpg)
+![iBGP](images/iBGP.jpg)
 
 #### Vlan/Crossconnect
 In this method:
@@ -94,7 +94,7 @@ In this method:
 - BGP session are formed between Frontend NPUs to form a mesh
 - A unique VLAN is used for communication between a pair of Frontend NPU
 
-![Vlan approach](/images/vlan_cc)
+![Vlan approach](images/vlan_cc)
 
 ### Module Design
 
