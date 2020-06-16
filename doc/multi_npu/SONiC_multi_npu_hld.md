@@ -85,7 +85,7 @@ In this approach:
 - All the NPUs have same view of the network.
 
 
-![iBGP](images/iBGP.jpg)
+![iBGP](images/iBgp.jpg)
 
 #### Vlan/Crossconnect
 In this method:
@@ -94,7 +94,7 @@ In this method:
 - BGP session are formed between Frontend NPUs to form a mesh
 - A unique VLAN is used for communication between a pair of Frontend NPU
 
-![Vlan approach](images/vlan_cc)
+![Vlan approach](images/vlan_cc.jpg)
 
 ### Module Design
 
